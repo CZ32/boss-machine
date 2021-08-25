@@ -12,8 +12,6 @@ Project has come from Codecademy, completed when partaking web development pathw
 
 The rest is boilerplate code provided by <a href="https://s3.amazonaws.com/codecademy-content/PRO/skill-paths/backend-javascript/projects/boss-machine/project-4-boss-machine-start.zip" target="_blank">Codecademy</a>
 
-![Video of boss-machine](https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BossMachine480.mov) 
-
 ### Key Features 
 
 Create routes to:
@@ -28,7 +26,26 @@ Create routes to:
 * Lean how to build custom middleware 
 * Understanding API Routers in Express.js
 * Configuring Express route parameters. 
-* Setting up sqLite3 database locally. 
+* Setting up sqLite3 database locally.
+
+### Routes
+
+- `/api/minions`
+  - GET /api/minions to get an array of all minions.
+  - POST /api/minions to create a new minion and save it to the database.
+  - GET /api/minions/:minionId to get a single minion by id.
+  - PUT /api/minions/:minionId to update a single minion by id.
+  - DELETE /api/minions/:minionId to delete a single minion by id.
+- `/api/ideas`
+  - GET /api/ideas to get an array of all ideas.
+  - POST /api/ideas to create a new idea and save it to the database.
+  - GET /api/ideas/:ideaId to get a single idea by id.
+  - PUT /api/ideas/:ideaId to update a single idea by id.
+  - DELETE /api/ideas/:ideaId to delete a single idea by id.
+- `/api/meetings`
+  - GET /api/meetings to get an array of all meetings.
+  - POST /api/meetings to create a new meeting and save it to the database.
+  - DELETE /api/meetings to delete _all_ meetings from the database.
 
 #### Schemas
 
@@ -49,5 +66,18 @@ Create routes to:
   - day: string
   - note: string
 
-You can view a video demonstration of the final app here:
+### Getting Started 
 
+1. Once you have the project downloaded, you'll need to run some terminal commands to get the application started. 
+2. First, open the root project directory in your terminal. 
+3. Run `npm install` to install the dependencies of this project and build the front-end application. 
+4. Once it has finished installing, you can run `npm run start` to begin your server.You'll see `Server listening on port 4001` in the terminal.
+5. Open public/index.html in the browser to interact with application. 
+
+### How to use boss machine 
+
+
+
+### Challenges 
+
+* Understanding API routers in Express.js for the first time. Followed additional materials to get to grips around this.
