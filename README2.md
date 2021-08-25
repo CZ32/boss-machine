@@ -76,7 +76,7 @@ Create routes to:
 
 ### How to use boss machine 
 
-![Gif showing how to use boss machine]()
+![Gif showing how to use boss machine](https://github.com/CZ32/boss-machine/blob/readme/public/img/boss-machine.gif)
 
 ### Challenges 
 
