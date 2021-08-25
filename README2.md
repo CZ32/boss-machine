@@ -4,7 +4,7 @@
 
 React, Node.js, Express.js, SQLite. 
 
-## Project Overview
+### Project Overview
 
 In this project, I created an entire API to serve information to a Boss Machine, a unique management application for today's most accomplished (evil) entrepreneurs. 
 
@@ -12,9 +12,7 @@ Project has come from Codecademy, completed when partaking web development pathw
 
 The rest is boilerplate code provided by <a href="https://s3.amazonaws.com/codecademy-content/PRO/skill-paths/backend-javascript/projects/boss-machine/project-4-boss-machine-start.zip" target="_blank">Codecademy</a>
 
-<video width="100%" height="100%" controls>
-   <source src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BossMachine480.mov" type="video/mp4">
-</video>
+![Video of boss-machine](https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BossMachine480.mov) 
 
 ### Key Features 
 
@@ -24,13 +22,13 @@ Create routes to:
 2. Add, remove and manage my brilliant 'million dollar ideas' from sqlite database.
 3. Handle all the annoying meetings that keep getting added to my busy schedule.
 
-## learning Objectives
+### learning Objectives
 
-* Learn how to build RESTful API, utilising express.js 
+* Learn how to build RESTful API, utilising Express.js 
 * Lean how to build custom middleware 
-* Understanding API Routers is express.js
+* Understanding API Routers in Express.js
 * Configuring Express route parameters. 
-* 
+* Setting up sqLite3 database locally. 
 
 #### Schemas
 
@@ -52,3 +50,4 @@ Create routes to:
   - note: string
 
 You can view a video demonstration of the final app here:
+
