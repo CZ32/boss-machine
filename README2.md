@@ -66,6 +66,32 @@ Create routes to:
   - day: string
   - note: string
 
+### Helper functions
+
+`getAllFromDatabase`:
+
+- Takes only the single argument for model name. Returns the array of elements in the database or `null` if an invalid argument is supplied
+
+`getFromDatabaseById`:
+
+- Takes the model name argument and a second string argument representing the unique ID of the element. Returns the instance with valid inputs and `-1` with an invalid id.
+
+`addToDatabase`:
+
+- Takes the model name argument and a second argument which is an object with the key-value pairs of the new instance. `addToDatabase` handles assigning `.id` properties to the instances. It does not check to make sure that valid inputs are supplied, so you will have to add those checks to your routes if necessary. `addToDatabase` will return the newly-created instance from the database. This function will validate the schema of the instance to create and throw an error if it is invalid.
+
+`updateInstanceInDatabase`:
+
+- Takes the model name argument and a second argument which is an object representing an updated instance. The instance provided must have a valid `.id` property which will be used to match. `updateInstanceInDatabase` will return the updated instance in the database or `null` with invalid inputs. This function will validate the schema of the updated instance and throw an error if it is invalid.
+
+`deleteFromDatabasebyId`:
+
+- Takes the model name argument and a second string argument representing the unique ID of the element to delete. Returns `true` if the delete occurs properly and `false` if the element is not found.
+
+`deleteAllFromDatabase`:
+
+- Takes only the single argument for model name. Deletes all elements from the proper model and returns a new, empty array. You will only need to use this function for a /api/meetings route.
+
 ### Getting Started 
 
 1. Once you have the project downloaded, you'll need to run some terminal commands to get the application started. 
